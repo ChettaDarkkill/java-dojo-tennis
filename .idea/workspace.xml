@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="586dbef8-565c-421c-a47e-017e0ded3fdc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/tennis/Tennis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tennis/Tennis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tennis/TennisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tennis/TennisTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/tennis/Tennis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+            <state relative-caret-position="289">
+              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -232,9 +231,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TennisTest - 2019.04.10 at 21h 26m 26s.xml">
-      <configuration name="TennisTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TennisTest - 2019.04.10 at 21h 28m 20s.xml">
       <configuration name="TennisTest" configurationId="JUnit" />
     </history-entry>
@@ -262,9 +258,12 @@
     <history-entry file="TennisTest - 2019.04.10 at 22h 00m 59s.xml">
       <configuration name="TennisTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TennisTest - 2019.04.10 at 22h 01m 16s.xml">
+      <configuration name="TennisTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7137000" />
+    <option name="totallyTimeSpent" value="7789000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -288,13 +287,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42249656" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3415638" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329235" />
       <window_info anchor="bottom" id="Thumbnails" order="7" weight="0.3287858" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.47050753" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.37037036" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32784638" />
@@ -351,8 +350,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tennis/Tennis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        <state relative-caret-position="289">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>
