@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="586dbef8-565c-421c-a47e-017e0ded3fdc" name="Default Changelist" comment="" />
+    <list default="true" id="586dbef8-565c-421c-a47e-017e0ded3fdc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tennis/Tennis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tennis/TennisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fizzbuzz/FizzBuzz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fizzbuzz/FizzBuzzTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fizzbuzz/FizzBuzzTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/fizzbuzz/FizzBuzzTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,30 +23,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/fizzbuzz/FizzBuzzTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tennis/Tennis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#171#172#0" expanded="true" />
-                <element signature="e#216#217#0" expanded="true" />
-                <element signature="e#160#161#0" expanded="true" />
-                <element signature="e#224#225#0" expanded="true" />
+                <element signature="e#68#69#0" expanded="true" />
+                <element signature="e#89#90#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fizzbuzz/FizzBuzz.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tennis/TennisTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="285">
+              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding>
-                <element signature="e#84#85#0" expanded="true" />
-                <element signature="e#105#106#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#157#158#0" expanded="true" />
+                <element signature="e#199#200#0" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+                <element signature="e#355#356#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,6 +61,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -62,6 +73,8 @@
         <option value="$PROJECT_DIR$/src/main/java/fizzbuzz/FizzBuzz.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/FizzBuzzTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/fizzbuzz/FizzBuzzTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tennis/TennisTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tennis/Tennis.java" />
       </list>
     </option>
   </component>
@@ -78,6 +91,7 @@
     <option name="width" value="1402" />
     <option name="height" value="789" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -129,7 +143,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="fizzbuzz" type="462c0819:PsiDirectoryNode" />
+              <item name="tennis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -138,6 +152,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -156,7 +171,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FizzBuzzTest">
+  <component name="RunManager" selected="JUnit.TennisTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Labs" />
@@ -182,6 +197,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TennisTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Labs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tennis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tennis" />
+      <option name="MAIN_CLASS_NAME" value="tennis.TennisTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -195,9 +228,11 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.FizzBuzzTest" />
+      <item itemvalue="JUnit.TennisTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TennisTest" />
         <item itemvalue="JUnit.FizzBuzzTest" />
         <item itemvalue="Application.Main" />
       </list>
@@ -215,7 +250,7 @@
       <updated>1554809379232</updated>
       <workItem from="1554809382758" duration="695000" />
       <workItem from="1554810217631" duration="140000" />
-      <workItem from="1554810451395" duration="1820000" />
+      <workItem from="1554810451395" duration="4041000" />
     </task>
     <servers />
   </component>
@@ -235,9 +270,21 @@
     <history-entry file="FizzBuzzTest - 2019.04.09 at 19h 18m 36s.xml">
       <configuration name="FizzBuzzTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FizzBuzzTest - 2019.04.09 at 22h 20m 14s.xml">
+      <configuration name="FizzBuzzTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FizzBuzzTest - 2019.04.09 at 22h 21m 15s.xml">
+      <configuration name="FizzBuzzTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FizzBuzzTest - 2019.04.10 at 10h 33m 13s.xml">
+      <configuration name="FizzBuzzTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest - 2019.04.10 at 10h 40m 33s.xml">
+      <configuration name="TennisTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2655000" />
+    <option name="totallyTimeSpent" value="4876000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -252,7 +299,7 @@
     <frame x="0" y="23" width="1440" height="821" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18454936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -267,7 +314,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329235" />
       <window_info anchor="bottom" id="Thumbnails" order="7" weight="0.3287858" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32786885" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32784638" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32784638" />
@@ -330,14 +377,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/fizzbuzz/FizzBuzzTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#171#172#0" expanded="true" />
             <element signature="e#216#217#0" expanded="true" />
             <element signature="e#160#161#0" expanded="true" />
             <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tennis/Tennis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#68#69#0" expanded="true" />
+            <element signature="e#89#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tennis/TennisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#157#158#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
           </folding>
         </state>
       </provider>
