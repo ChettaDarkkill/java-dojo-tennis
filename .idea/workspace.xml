@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="586dbef8-565c-421c-a47e-017e0ded3fdc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/tennis/Tennis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tennis/Tennis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tennis/TennisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tennis/TennisTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +21,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/tennis/Tennis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="318">
+              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+              <folding>
+                <element signature="e#1110#1111#0" expanded="true" />
+                <element signature="e#1158#1159#0" expanded="true" />
+                <element signature="e#1211#1212#0" expanded="true" />
+                <element signature="e#1259#1260#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -29,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tennis/TennisTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+            <state relative-caret-position="551">
+              <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#191#192#0" expanded="true" />
@@ -231,24 +238,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TennisTest - 2019.04.10 at 21h 28m 20s.xml">
-      <configuration name="TennisTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest - 2019.04.10 at 21h 35m 11s.xml">
-      <configuration name="TennisTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest - 2019.04.10 at 21h 35m 55s.xml">
-      <configuration name="TennisTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest - 2019.04.10 at 21h 38m 10s.xml">
-      <configuration name="TennisTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest - 2019.04.10 at 21h 38m 44s.xml">
-      <configuration name="TennisTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest - 2019.04.10 at 21h 54m 58s.xml">
-      <configuration name="TennisTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TennisTest - 2019.04.10 at 21h 56m 57s.xml">
       <configuration name="TennisTest" configurationId="JUnit" />
     </history-entry>
@@ -261,9 +250,27 @@
     <history-entry file="TennisTest - 2019.04.10 at 22h 01m 16s.xml">
       <configuration name="TennisTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TennisTest - 2019.04.10 at 22h 12m 50s.xml">
+      <configuration name="TennisTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest - 2019.04.10 at 22h 28m 49s.xml">
+      <configuration name="TennisTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest - 2019.04.10 at 22h 29m 52s.xml">
+      <configuration name="TennisTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest - 2019.04.10 at 22h 31m 38s.xml">
+      <configuration name="TennisTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest - 2019.04.10 at 22h 32m 17s.xml">
+      <configuration name="TennisTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest - 2019.04.10 at 22h 33m 38s.xml">
+      <configuration name="TennisTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7789000" />
+    <option name="totallyTimeSpent" value="8966000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -287,13 +294,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3415638" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3415638" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329235" />
       <window_info anchor="bottom" id="Thumbnails" order="7" weight="0.3287858" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.37037036" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.29766804" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32784638" />
@@ -338,8 +345,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tennis/TennisTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+        <state relative-caret-position="551">
+          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#191#192#0" expanded="true" />
@@ -350,8 +357,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tennis/Tennis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="318">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="e#1110#1111#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1211#1212#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

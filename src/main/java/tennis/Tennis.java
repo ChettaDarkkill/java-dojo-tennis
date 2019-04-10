@@ -10,26 +10,38 @@ public class Tennis {
 
     private static int fortyPoint = 40;
 
+    private int player1Point;
 
-    public String getScore(int playerOneScore, int playerTwoScore) {
-        if(playerOneScore == fifteenPoint && playerTwoScore == zero) {
+    private int player2Point;
+
+
+    public String getScore() {
+        if(this.player1Point == fifteenPoint && this.player2Point == zero) {
             return "fifteen,love";
         }
-        if(playerOneScore == zero && playerTwoScore == fifteenPoint) {
+        if(this.player1Point == zero && this.player2Point == fifteenPoint) {
             return "love,fifteen";
         }
-        if(playerOneScore == thirtyPoint && playerTwoScore == zero) {
+        if(this.player1Point == thirtyPoint && this.player2Point == zero) {
             return "thirty,love";
         }
-        if(playerOneScore == zero && playerTwoScore == thirtyPoint) {
+        if(this.player1Point == zero && this.player2Point == thirtyPoint) {
             return "love,thirty";
         }
-        if(playerOneScore == fortyPoint && playerTwoScore == zero) {
+        if(this.player1Point == fortyPoint && this.player2Point == zero) {
             return "forty,love";
         }
-        if(playerOneScore == zero && playerTwoScore == fortyPoint) {
+        if(this.player1Point == zero && this.player2Point == fortyPoint) {
             return "love,forty";
         }
         return "all Love";
+    }
+
+    public void setPlayer1Point(int player1Point) {
+        this.player1Point = player1Point;
+    }
+
+    public void setPlayer2Point(int player2Point) {
+        this.player2Point = player2Point;
     }
 }
