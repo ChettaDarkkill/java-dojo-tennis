@@ -2,7 +2,7 @@ package tennis;
 
 public class Tennis {
 
-    public String newGame() {
+    public String getScore() {
         return "All Love";
     }
 }

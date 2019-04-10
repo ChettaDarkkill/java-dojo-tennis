@@ -15,6 +15,7 @@ public class TennisTest {
 
     @Test
     public void testNewGameShouldReturnAllLove() {
-        assertEquals("All Love", this.tennis.newGame());
+        String score = this.tennis.getScore();
+        assertEquals("All Love", score);
     }
 }
