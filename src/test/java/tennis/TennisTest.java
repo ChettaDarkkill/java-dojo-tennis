@@ -20,8 +20,11 @@ public class TennisTest {
     }
 
     @Test
-    public void testPlayerOneFirstBall() {
-        String score = this.tennis.getScore(15,0);
-        assertEquals("fifteen,love", score);
+    public void testPlayerOneOrTwoFirstBall() {
+        String score1 = this.tennis.getScore(15,0);
+        assertEquals("fifteen,love", score1);
+
+        String score2 = this.tennis.getScore(0,15);
+        assertEquals("love,fifteen", score2);
     }
 }
