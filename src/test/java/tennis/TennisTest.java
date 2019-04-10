@@ -27,4 +27,13 @@ public class TennisTest {
         String score2 = this.tennis.getScore(0,15);
         assertEquals("love,fifteen", score2);
     }
+
+    @Test
+    public void testPlayerOneOrTwoGetSecondBall() {
+        String score1 = this.tennis.getScore(30,0);
+        assertEquals("thirty,love", score1);
+
+        String score2 = this.tennis.getScore(0, 30);
+        assertEquals("love,thirty", score2);
+    }
 }
