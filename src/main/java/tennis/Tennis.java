@@ -1,47 +1,68 @@
 package tennis;
 
-public class Tennis {
-
-    private static int zero = 0;
-
-    private static int fifteenPoint = 15;
-
-    private static int thirtyPoint = 30;
-
-    private static int fortyPoint = 40;
-
-    private int player1Point;
-
-    private int player2Point;
-
-
-    public String getScore() {
-        if(this.player1Point == fifteenPoint && this.player2Point == zero) {
-            return "fifteen,love";
+public class Tennis implements Rule {
+    String[] score = {"Love", "15", "30", "40"};
+    public String announce(Player playerA, Player playerB) {
+        if(isDeuce(playerA, playerB)) {
+            return deuceStateScore(playerA, playerB);
         }
-        if(this.player1Point == zero && this.player2Point == fifteenPoint) {
-            return "love,fifteen";
-        }
-        if(this.player1Point == thirtyPoint && this.player2Point == zero) {
-            return "thirty,love";
-        }
-        if(this.player1Point == zero && this.player2Point == thirtyPoint) {
-            return "love,thirty";
-        }
-        if(this.player1Point == fortyPoint && this.player2Point == zero) {
-            return "forty,love";
-        }
-        if(this.player1Point == zero && this.player2Point == fortyPoint) {
-            return "love,forty";
-        }
-        return "all Love";
+
+        return normalStateScore(playerA, playerB);
     }
 
-    public void setPlayer1Point(int player1Point) {
-        this.player1Point = player1Point;
+    private String normalStateScore(Player playerA, Player playerB) {
+        if (isStartGame(playerA, playerB)) {
+            return "Love - Love";
+        }
+
+        String winner = winnerIs(playerA, playerB);
+        String normalScore = winner != null ? winner : score[playerA.getScore()] + " - " + score[playerB.getScore()];
+
+        return normalScore;
     }
 
-    public void setPlayer2Point(int player2Point) {
-        this.player2Point = player2Point;
+    private String deuceStateScore(Player playerA, Player playerB) {
+        String winner = winnerIs(playerA, playerB);
+        if (winner != null){
+            return winner;
+        }
+
+        if(playerA.getScore()-playerB.getScore()==1){
+            return "Advantage A";
+        }
+
+        if(playerB.getScore()-playerA.getScore()==1){
+            return "Advantage B";
+        }
+
+        return "Deuce";
+    }
+
+    private String winnerIs(Player playerA, Player playerB) {
+        if(playerBwinGame(playerA, playerB)) {
+            return "Player B Win";
+        }
+
+        if(playerAwinGame(playerA, playerB)) {
+            return "Player A Win";
+        }
+
+        return null;
+    }
+
+    private boolean isStartGame(Player playerA, Player playerB) {
+        return playerA.getScore() == 0 && playerB.getScore() == 0;
+    }
+
+    private boolean isDeuce(Player playerA, Player playerB) {
+        return playerA.getScore() >= 3 && playerB.getScore() >= 3;
+    }
+
+    private boolean playerAwinGame(Player playerA, Player playerB) {
+        return playerA.getScore() >= 4 && playerA.getScore() > playerB.getScore() && Math.abs(playerA.getScore() - playerB.getScore()) == 2;
+    }
+
+    private boolean playerBwinGame(Player playerA, Player playerB) {
+        return playerB.getScore() >= 4 && playerB.getScore() > playerA.getScore() && Math.abs(playerA.getScore() - playerB.getScore()) == 2;
     }
 }

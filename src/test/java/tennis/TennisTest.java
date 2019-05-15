@@ -6,64 +6,147 @@ import static org.junit.Assert.*;
 
 public class TennisTest {
 
-    private Tennis tennis;
-
-    private static int zero = 0;
-
-    private static int fifteenPoint = 15;
-
-    private static int thirtyPoint = 30;
-
-    private static int fortyPoint = 40;
-
+    private GameController controller;
+    private Rule tennisRule;
 
     @Before
-    public void setup() {
-        this.tennis = new Tennis();
+    public void setUp() {
+        tennisRule = new Tennis();
+        controller = new GameController();
     }
 
     @Test
-    public void testNewGameShouldReturnAllLove() {
-        String score = this.tennis.getScore();
-        assertEquals("all Love", score);
+    public void startGameScoreShouldBeLoveLove() {
+        String score = tennisRule.announce(controller.getPlayerA(), controller.getPlayerB());
+
+        assertEquals("Love - Love", score);
     }
 
     @Test
-    public void testPlayerOneOrTwoFirstBall() {
-        this.tennis.setPlayer1Point(fifteenPoint);
-        this.tennis.setPlayer2Point(zero);
-        String score1 = this.tennis.getScore();
-        assertEquals("fifteen,love", score1);
+    public void whenPlayerAHasOnePointMoreThanPlayerBAndPlayerBScoreIsZero() {
+        controller.scoreToPlayerA();
 
-        this.tennis.setPlayer1Point(zero);
-        this.tennis.setPlayer2Point(fifteenPoint);
-        String score2 = this.tennis.getScore();
-        assertEquals("love,fifteen", score2);
+        String score = tennisRule.announce(controller.getPlayerA(), controller.getPlayerB());
+
+        assertEquals("15 - Love", score);
     }
 
     @Test
-    public void testPlayerOneOrTwoGetSecondBall() {
-        this.tennis.setPlayer1Point(thirtyPoint);
-        this.tennis.setPlayer2Point(zero);
-        String score1 = this.tennis.getScore();
-        assertEquals("thirty,love", score1);
+    public void whenPlayerBHasOnePointThanPlayerAAndPlayerAScoreIsZero() {
+        controller.scoreToPlayerB();
 
-        this.tennis.setPlayer1Point(zero);
-        this.tennis.setPlayer2Point(thirtyPoint);
-        String score2 = this.tennis.getScore();
-        assertEquals("love,thirty", score2);
+        String score = tennisRule.announce(controller.getPlayerA(), controller.getPlayerB());
+
+        assertEquals("Love - 15", score);
     }
 
     @Test
-    public  void testPlayerOneOrTwoGetThirdBall() {
-        this.tennis.setPlayer1Point(fortyPoint);
-        this.tennis.setPlayer2Point(zero);
-        String score1 = this.tennis.getScore();
-        assertEquals("forty,love", score1);
+    public void whenPlayerAHasTwoPointThanPlayerBAndPlayerBScoreIsZero() {
+        setScoreToPlayerA(2);
 
-        this.tennis.setPlayer1Point(zero);
-        this.tennis.setPlayer2Point(fortyPoint);
-        String score2 = this.tennis.getScore();
-        assertEquals("love,forty", score2);
+        String score = tennisRule.announce(controller.getPlayerA(), controller.getPlayerB());
+
+        assertEquals("30 - Love", score);
+    }
+
+    @Test
+    public void whenPlayerAHasTwoPointThanPlayerBAndPlayerBScoreIsOne() {
+        setScoreToPlayerA(3);
+        setScoreToPlayerB(1);
+
+        String score = tennisRule.announce(controller.getPlayerA(), controller.getPlayerB());
+
+        assertEquals("40 - 15", score);
+    }
+
+    @Test
+    public void whenPlayerAAndPlayerBBothHaveFourPoint() {
+        setScoreToPlayerA(3);
+        setScoreToPlayerB(3);
+
+        String score = tennisRule.announce(controller.getPlayerA(), controller.getPlayerB());
+
+        assertEquals("Deuce", score);
+    }
+
+    @Test
+    public void whenPlayerAGet2PointMoreThanPlayerBAndPlayerAScoreIsHigerThan4() {
+        setScoreToPlayerA(4);
+        setScoreToPlayerB(2);
+
+        String score = tennisRule.announce(controller.getPlayerA(), controller.getPlayerB());
+
+        assertEquals("Player A Win", score);
+    }
+
+    @Test
+    public void whenPlayerBGet2PointMoreThanPlayerAAndPlayerBScoreIsHigerThan4() {
+        setScoreToPlayerA(2);
+        setScoreToPlayerB(4);
+
+        String score = tennisRule.announce(controller.getPlayerA(), controller.getPlayerB());
+
+        assertEquals("Player B Win", score);
+    }
+
+    @Test
+    public void whenPlayerBGet2PointMoreThanPlayerAAndBothPlayerScoreIsHigerThan4() {
+        setScoreToPlayerA(4);
+        setScoreToPlayerB(6);
+
+        String score = tennisRule.announce(controller.getPlayerA(), controller.getPlayerB());
+
+        assertEquals("Player B Win", score);
+    }
+
+    @Test
+    public void whenPlayerAGet2PointMoreThanPlayerBAndBothPlayerScoreIsHigerThan4() {
+        setScoreToPlayerA(8);
+        setScoreToPlayerB(6);
+        String score = tennisRule.announce(controller.getPlayerA(), controller.getPlayerB());
+
+        assertEquals("Player A Win", score);
+    }
+
+    @Test
+    public void whenPlayerAAndPlayerBBothHaveSameScoreAndScoreIsHigerThan4() {
+        setScoreToPlayerA(8);
+        setScoreToPlayerB(8);
+
+        String score = tennisRule.announce(controller.getPlayerA(), controller.getPlayerB());
+
+        assertEquals("Deuce", score);
+    }
+
+    @Test
+    public void whenPlayerAGet1PointMoreThanPlayerBAndBothPlayerScoreIsHigerThan4() {
+        setScoreToPlayerA(5);
+        setScoreToPlayerB(4);
+
+        String score = tennisRule.announce(controller.getPlayerA(), controller.getPlayerB());
+
+        assertEquals("Advantage A", score);
+    }
+
+    @Test
+    public void whenPlayerBGet1PointMoreThanPlayerAAndBothPlayerScoreIsHigerThan4() {
+        setScoreToPlayerA(4);
+        setScoreToPlayerB(5);
+
+        String score = tennisRule.announce(controller.getPlayerA(), controller.getPlayerB());
+
+        assertEquals("Advantage B", score);
+    }
+
+    private void setScoreToPlayerA(int scoreA){
+        for(int i = 0; i < scoreA; i++){
+            controller.scoreToPlayerA();
+        }
+    }
+
+    private void setScoreToPlayerB(int scoreB){
+        for(int i = 0; i < scoreB; i++){
+            controller.scoreToPlayerB();
+        }
     }
 }
